@@ -130,23 +130,19 @@ generateBtn.addEventListener('click', function(event) {
 
 resetBtn.addEventListener('click', function() {
     errorText.textContent = '';
-    console.log(generatorPassword)
     generatorPassword.forEach(pass => pass.textContent = '');
 });
 
 
 passwordBlock.addEventListener('click', function (event) {
     event.preventDefault();
-    console.log(event.target);
 
     if (
       event.target.classList.contains("generator__copy-button") ||
       event.target.closest(".generator__copy-button")
     ) {
-      console.log("c");
       copyBtn.forEach((btn, index) => {
         if (event.target === btn) {
-          console.log(generatorPassword[index]);
           generatorPassword[index].focus();
           generatorPassword[index].select();
           document.execCommand("copy");

@@ -123,16 +123,9 @@ body {
     transition: 0.4s;
 }
 
-.generator__copy_svg {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    color: #10B981;
-    transition: 0.4s;
-}
-
-.generator__copy-button:hover .generator__copy_svg {
+.generator__copy-button:hover {
     color: #3ed7a4;
+    filter: invert(56%) sepia(94%) saturate(1972%) hue-rotate(119deg) brightness(112%) contrast(87%);
 }
 
 @media (max-width: 720px) {
