@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="generator">
+            <div class="genarator__text">
+                <h1 class="generator__title">Generate a <br> <span class="generator__title_span">random pasword</span></h1>
+                <p>Never use an insecure password again.</p>
+            </div>
+            <form action="#" class="generator__form">
+                <p class="generator__block">
+                    <input type="submit" class="generate__button" id="generate-btn" value="Generate password">
+                    <input type="number" class="generator__input generator__length-input" placeholder="Enter password length" id="password-length-input" value="">
+                    <input type="reset" class="generate__button generate__button_reset" id="reset-btn" value="Clear">
+                </p>
+                <p class="generator__error" id="error-text"></p>
+                <p class="generator__divider"></p>
+                <div class="generator__block" id="password-block">
+                    <div class="generator__pass-block">
+                        <input class="generator__input generator__password">
+                        <button class="generator__copy-button" title="Copy to the clipboard">
+                            <!-- <svg class="generator__copy_svg">
+                                <use href="./sprite.svg#copy"></use>
+                            </svg> -->
+                        </button>
+                    </div>
+                    <div class="generator__pass-block">
+                        <input class="generator__input generator__password">
+                        <button class="generator__copy-button" title="Copy to the clipboard">
+                            <!-- <svg class="generator__copy_svg">
+                                <use href="sprite.svg#copy"></use>
+                            </svg> -->
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
