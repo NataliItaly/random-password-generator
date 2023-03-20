@@ -151,5 +151,3 @@ passwordBlock.addEventListener('click', function (event) {
     }
 });
 
-
-
